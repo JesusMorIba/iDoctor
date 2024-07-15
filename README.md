@@ -49,4 +49,4 @@ Los requisitos no funcionales describen las funciones específicas que el sistem
 - Un usuario no registrado solo podrá registrarse como Profesional o como Paciente, o loguearse mediante un nombre de usuario y contraseña.
 - Un Profesional solo podrá crear citas asociados a sus consultas.
 - Se debe implementar un sistema de control de roles para gestionar los permisos de acceso a las diferentes pantallas.
-- Las contraseñas deben almacenarse cifradas
+- Las contraseñas deben almacenarse cifradas.
