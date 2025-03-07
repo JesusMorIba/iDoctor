@@ -1,52 +1,37 @@
-# Proyecto iDoctor
+# iDoctor
 
-El proyecto iDoctor es una aplicación de gestión diseñada para conectar usuarios con profesionales de la salud. La aplicación proporcionará perfiles para doctores, fisioterapeutas y dentistas, y permitirá a los usuarios buscar profesionales, ver sus horarios, realizar reservas de citas, ver informes y valoraciones.
+iDoctor es una aplicación móvil que conecta a los usuarios con profesionales de la salud, facilitando la gestión de citas y mejorando la comunicación entre pacientes y especialistas.
 
-Con este proyecto buscamos crear una aplicación que simplifique la administración de las consultas de salud y mejore la comunicación de los pacientes y los profesionales. Se usará una base de datos en tiempo real, en concreto, Firebase Realtime Database.
+## 📌 Características
 
-## Requisitos de Información
+- 🔍 **Búsqueda de profesionales**: Encuentra doctores, fisioterapeutas y dentistas según tus necesidades.
+- 📅 **Gestión de citas**: Consulta horarios disponibles y reserva citas de manera sencilla.
+- ⭐ **Valoraciones e informes**: Accede a valoraciones de otros usuarios e informes proporcionados por los profesionales.
+- 🔔 **Notificaciones**: Recibe recordatorios de tus citas y notificaciones importantes.
+- 🔐 **Autenticación segura**: Inicio de sesión con correo y contraseña a través de Firebase Authentication.
 
-Los requisitos de información son aquellos que nos indican la información que debemos almacenar y la estructura de dicha información. Nuestra aplicación deberá almacenar datos de:
+## 🛠️ Tecnologías utilizadas
 
-- **Usuario**: nombre de usuario y contraseña.
-- **Profesional**: nombre, apellidos, foto, número de colegiado, especialidad (General, Fisioterapia u Odontología), descripción, media de estrellas y número de valoraciones.
-- **Paciente**: nombre, apellidos, foto, email, teléfono y si tiene seguro médico o no.
-- **Consulta**: dirección, ciudad, email, teléfono, teléfono auxiliar y observaciones.
-- **Horario**: día de la semana (Lunes, Martes, Miércoles, Jueves, Viernes, Sábado y Domingo), hora de inicio y hora de fin.
-- **Cita**: fecha de la cita, hora de la cita y si está activa o no.
-- **Evaluación**: descripción, exploración, tratamiento, fecha y hora de la evaluación.
+- **Lenguaje de programación**: Java
+- **Plataforma**: Android
+- **Base de datos**: Firebase Realtime Database
+- **Autenticación**: Firebase Authentication
+- **Interfaz gráfica**: Material Design para Android
 
-Además, debemos almacenar un identificador de todas las entidades anteriores.
+## 📝 Uso de la aplicación
 
-## Requisitos Funcionales
+1. **Registro e inicio de sesión**: Los usuarios deben registrarse con un correo electrónico y contraseña.
+2. **Exploración de profesionales**: Se pueden buscar especialistas disponibles según la especialidad.
+3. **Reserva de citas**: Se elige un horario disponible y se agenda la cita.
+4. **Notificaciones y recordatorios**: Se envían notificaciones sobre próximas citas.
+5. **Valoraciones**: Los pacientes pueden dejar comentarios sobre su experiencia.
 
-Los requisitos funcionales indican las diferentes funcionalidades que debe realizar nuestra aplicación:
 
-### Usuarios
-- Un usuario debe ser capaz de registrarse en la aplicación con el Rol de Profesional o Paciente.
-- Un usuario debe ser capaz de entrar en la aplicación mediante su nombre de usuario y contraseña.
-- Un usuario logueado debe ser capaz de cerrar sesión.
+## 📚 Licencia
 
-### Profesional
-- Un profesional debe ser capaz de gestionar sus consultas (listar, crear, editar y eliminar).
-- Un profesional debe ser capaz de gestionar el horario de sus consultas (listar, crear, editar y eliminar).
-- Un profesional debe ser capaz de gestionar sus citas (listar, crear, editar y eliminar).
-- Un profesional debe ser capaz de realizar una evaluación de una cita médica.
-- Un profesional debe ser capaz de listar todas las valoraciones que ha recibido y verlas en detalle.
-- Un profesional debe ser capaz de generar automáticamente las citas asociadas a una de sus consultas de una semana o un mes.
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más información.
 
-### Paciente
-- Un paciente debe ser capaz de listar todos los profesionales de la aplicación y verlos en detalle.
-- Un paciente debe ser capaz de reservar una cita médica con algún profesional.
-- Un paciente debe ser capaz de listar todas sus citas médicas.
-- Un paciente debe ser capaz de ver en detalle sus citas médicas y cancelarla si la fecha de la reserva no ha pasado.
-- Un paciente debe ser capaz de ver las evaluaciones de sus citas médicas.
+---
 
-## Requisitos No Funcionales
+Hecho con 💙 por JesusMorIba
 
-Los requisitos no funcionales describen las funciones específicas que el sistema debe realizar, se centran en cómo debe funcionar el sistema en términos de calidad, rendimiento, seguridad y otras características importantes. Los requisitos no funcionales que debe cumplir nuestra aplicación son los siguientes:
-
-- Un usuario no registrado solo podrá registrarse como Profesional o como Paciente, o loguearse mediante un nombre de usuario y contraseña.
-- Un Profesional solo podrá crear citas asociados a sus consultas.
-- Se debe implementar un sistema de control de roles para gestionar los permisos de acceso a las diferentes pantallas.
-- Las contraseñas deben almacenarse cifradas.
